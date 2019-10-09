@@ -1,0 +1,7 @@
+<h1> {{ title }} </h1>
+
+<label>Parent : <input type="text" [(ngModel)]="ItemParent"></label>
+<app-directive [inDirective]="ItemParent" (eventDirective)="ItemParent=$event"></app-directive>
+
+
+<app-liaisons> </app-liaisons>

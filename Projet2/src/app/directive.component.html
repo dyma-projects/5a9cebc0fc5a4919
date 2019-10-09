@@ -1,0 +1,15 @@
+<p> directive works !</p>
+
+<label>Enfant : <input type="text" [(ngModel)]="inDirective"></label>
+<button (click)="Envoyer(inDirective)" title="Vers parent">Envoyer</button>
+
+<br>
+<br>
+
+<button (click)="Paragraphe()" title="Paragraphes p1 et p2">Paragraphe</button>
+<p *ngIf="statut"> Paragraphe p1 </p>
+<p *ngIf="!statut"> Paragraphe p2 </p>
+
+<ul>
+    <li *ngFor="let in of texts"> {{ in }} </li>
+</ul>
